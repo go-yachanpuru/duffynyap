@@ -1,0 +1,5 @@
+<% if current_user %>
+	<%=image_tag "#{current_user.uimage}", :width => '20', :height => '20' %><%= current_user.name %> <%= link_to 'ログアウト', logout_path %>
+<% else %>
+	<%= link_to 'ログイン', '/auth/twitter' %>
+<% end %>
