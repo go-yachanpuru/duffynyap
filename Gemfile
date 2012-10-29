@@ -5,12 +5,26 @@ gem 'rails', '3.2.8'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-# MySQL
-gem 'mysql2'
+group :development do
+	# MySQL
+	gem 'mysql2'
+	# Use thin as the app server
+	gem 'thin'
+end
+
+group :test do
+	# MySQL
+	gem 'mysql2'
+	# Use thin as the app server
+	gem 'thin'
+end
+
 
 group :production do
+	# Postgres
 	gem 'pg'
-	gem 'thin'
+	# Use unicorn as the app server
+	gem 'unicorn'
 end
 
 # Gems used only for assets and not required
@@ -29,16 +43,10 @@ end
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
-gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby'
 
 # To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use thin as the app server
-gem 'thin'
-
-# Use unicorn as the app server
-# gem 'unicorn'
+gem 'jbuilder'
 
 # Deploy with Capistrano
 gem 'capistrano'
