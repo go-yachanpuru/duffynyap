@@ -5,26 +5,23 @@ gem 'rails', '3.2.8'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-group :development do
-	# MySQL
-	gem 'mysql2'
-	# Use thin as the app server
-	gem 'thin'
+group :development, :test do
+  # MySQL
+  gem 'mysql2'
+  # Use thin as the app server
+  gem 'thin'
+  # pry
+  gem 'pry-rails'
+  gem 'pry-doc'
+  # To use debugger
+  gem 'debugger'
 end
-
-group :test do
-	# MySQL
-	gem 'mysql2'
-	# Use thin as the app server
-	gem 'thin'
-end
-
 
 group :production do
-	# Postgres
-	gem 'pg'
-	# Use unicorn as the app server
-	gem 'unicorn'
+  # Postgres
+  gem 'pg'
+  # Use unicorn as the app server
+  gem 'unicorn'
 end
 
 # Gems used only for assets and not required
@@ -51,9 +48,6 @@ gem 'jbuilder'
 # Deploy with Capistrano
 gem 'capistrano'
 
-# To use debugger
-gem 'debugger'
-
 # Configuration
 gem 'rails_config'
 
@@ -77,3 +71,15 @@ gem 'active_decorator'
 
 # Twitter Bootstrap
 gem 'twitter-bootstrap-rails'
+
+#  TimeLine
+gem 'timeline_fu'
+
+# Twitter API
+gem 'twitter'
+
+# Facebook API
+gem 'fb_graph'
+
+# RMagick
+gem 'rmagick'

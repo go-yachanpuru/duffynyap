@@ -12,11 +12,11 @@ ECHO = $(ECHO1:0=@echo)
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1
-hdrdir = /Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1
-arch_hdrdir = /Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/$(arch)
+topdir = /Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1
+hdrdir = /Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1
+arch_hdrdir = /Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1/$(arch)
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
-prefix = $(DESTDIR)/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194
+prefix = $(DESTDIR)/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286
 rubylibprefix = $(libdir)/$(RUBY_BASE_NAME)
 exec_prefix = $(prefix)
 vendorhdrdir = $(rubyhdrdir)/vendor_ruby
@@ -53,26 +53,27 @@ vendorarchdir = $(vendorlibdir)/$(sitearch)
 
 NULLCMD = :
 
-CC = gcc-4.2
-CXX = g++-4.2
+CC = clang
+CXX = g++
 LIBRUBY = $(LIBRUBY_SO)
 LIBRUBY_A = lib$(RUBY_SO_NAME)-static.a
 LIBRUBYARG_SHARED = -l$(RUBY_SO_NAME)
 LIBRUBYARG_STATIC = -l$(RUBY_SO_NAME)-static
-OUTFLAG = -o 
-COUTFLAG = -o 
+empty =
+OUTFLAG = -o $(empty)
+COUTFLAG = -o $(empty)
 
 RUBY_EXTCONF_H = 
 cflags   =  $(optflags) $(debugflags) $(warnflags)
 optflags = -O3
 debugflags = -ggdb
-warnflags = -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration
-CFLAGS   = -fno-common $(cflags)  -fno-common -pipe $(ARCH_FLAG)
+warnflags = -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration
+CFLAGS   = -fno-common -I/Users/kiriya/.rvm/usr/include -fno-common -pipe $(ARCH_FLAG)
 INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir)
 DEFS     = 
-CPPFLAGS =  -I/Users/kiriya/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE $(DEFS) $(cppflags)
+CPPFLAGS =  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE $(DEFS) $(cppflags)
 CXXFLAGS = $(CFLAGS) $(cxxflags)
-ldflags  = -L. 
+ldflags  = -L. -L/Users/kiriya/.rvm/usr/lib
 dldflags = -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress -Wl,-flat_namespace
 ARCH_FLAG = 
 DLDFLAGS = $(ldflags) $(dldflags) $(ARCH_FLAG)
@@ -84,10 +85,10 @@ EXEEXT =
 RUBY_BASE_NAME = ruby
 RUBY_INSTALL_NAME = ruby
 RUBY_SO_NAME = ruby.1.9.1
-arch = x86_64-darwin11.4.2
+arch = x86_64-darwin12.2.0
 sitearch = $(arch)
 ruby_version = 1.9.1
-ruby = /Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/bin/ruby
+ruby = /Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/bin/ruby
 RUBY = $(ruby)
 RM = rm -f
 RM_RF = $(RUBY) -run -e rm -- -rf
@@ -102,8 +103,8 @@ COPY = cp
 
 preload = 
 
-libpath = . $(libdir) /Users/kiriya/.rvm/usr/lib
-LIBPATH =  -L. -L$(libdir) -L/Users/kiriya/.rvm/usr/lib
+libpath = . $(libdir)
+LIBPATH =  -L. -L$(libdir)
 DEFFILE = 
 
 CLEANFILES = mkmf.log
@@ -124,8 +125,8 @@ STATIC_LIB =
 
 BINDIR        = $(bindir)
 RUBYCOMMONDIR = $(sitedir)$(target_prefix)
-RUBYLIBDIR = /Users/kiriya/Documents/workspace/duffynyap/vendor/bundler/ruby/1.9.1/gems/thin-1.5.0/lib$(target_prefix)
-RUBYARCHDIR = /Users/kiriya/Documents/workspace/duffynyap/vendor/bundler/ruby/1.9.1/gems/thin-1.5.0/lib$(target_prefix)
+RUBYLIBDIR = /Users/kiriya/Documents/works/eclipse/duffynyap/vendor/bundler/ruby/1.9.1/gems/thin-1.5.0/lib$(target_prefix)
+RUBYARCHDIR = /Users/kiriya/Documents/works/eclipse/duffynyap/vendor/bundler/ruby/1.9.1/gems/thin-1.5.0/lib$(target_prefix)
 HDRDIR        = $(rubyhdrdir)/ruby$(target_prefix)
 ARCHHDRDIR    = $(rubyhdrdir)/$(arch)/ruby$(target_prefix)
 

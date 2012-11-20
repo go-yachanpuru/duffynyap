@@ -1,6 +1,6 @@
 have_struct_member: checking for rb_method_entry_t.called_id in method.h... -------------------- yes
 
-"gcc-4.2 -o conftest -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin11.4.2 -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/kiriya/.rvm/src/ruby-1.9.3-p194 -I/Users/kiriya/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/lib -L/Users/kiriya/.rvm/usr/lib -L.      -lruby.1.9.1  -lpthread -ldl -lobjc "
+"clang -o conftest -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1/x86_64-darwin12.2.0 -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1/ruby/backward -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1 -I. -I/Users/kiriya/.rvm/src/ruby-1.9.3-p286 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/kiriya/.rvm/usr/include -fno-common -pipe conftest.c  -L. -L/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/lib -L. -L/Users/kiriya/.rvm/usr/lib     -lruby.1.9.1  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -8,7 +8,7 @@ checked program was:
 3: int main() {return 0;}
 /* end */
 
-"gcc-4.2 -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin11.4.2 -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/kiriya/.rvm/src/ruby-1.9.3-p194 -I/Users/kiriya/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe   -c conftest.c"
+"clang -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1/x86_64-darwin12.2.0 -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1/ruby/backward -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1 -I. -I/Users/kiriya/.rvm/src/ruby-1.9.3-p286 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/kiriya/.rvm/usr/include -fno-common -pipe   -c conftest.c"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -24,7 +24,7 @@ checked program was:
 
 have_header: checking for vm_core.h... -------------------- yes
 
-"gcc-4.2 -E -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin11.4.2 -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/kiriya/.rvm/src/ruby-1.9.3-p194 -I/Users/kiriya/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe  conftest.c -o conftest.i"
+"clang -E -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1/x86_64-darwin12.2.0 -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1/ruby/backward -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1 -I. -I/Users/kiriya/.rvm/src/ruby-1.9.3-p286 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/kiriya/.rvm/usr/include -fno-common -pipe  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -36,7 +36,7 @@ checked program was:
 
 have_header: checking for iseq.h... -------------------- yes
 
-"gcc-4.2 -E -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin11.4.2 -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/kiriya/.rvm/src/ruby-1.9.3-p194 -I/Users/kiriya/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe  conftest.c -o conftest.i"
+"clang -E -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1/x86_64-darwin12.2.0 -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1/ruby/backward -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1 -I. -I/Users/kiriya/.rvm/src/ruby-1.9.3-p286 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/kiriya/.rvm/usr/include -fno-common -pipe  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -48,7 +48,7 @@ checked program was:
 
 have_header: checking for insns.inc... -------------------- yes
 
-"gcc-4.2 -E -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin11.4.2 -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/kiriya/.rvm/src/ruby-1.9.3-p194 -I/Users/kiriya/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe  conftest.c -o conftest.i"
+"clang -E -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1/x86_64-darwin12.2.0 -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1/ruby/backward -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1 -I. -I/Users/kiriya/.rvm/src/ruby-1.9.3-p286 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/kiriya/.rvm/usr/include -fno-common -pipe  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -60,7 +60,7 @@ checked program was:
 
 have_header: checking for insns_info.inc... -------------------- yes
 
-"gcc-4.2 -E -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin11.4.2 -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/kiriya/.rvm/src/ruby-1.9.3-p194 -I/Users/kiriya/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe  conftest.c -o conftest.i"
+"clang -E -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1/x86_64-darwin12.2.0 -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1/ruby/backward -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1 -I. -I/Users/kiriya/.rvm/src/ruby-1.9.3-p286 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/kiriya/.rvm/usr/include -fno-common -pipe  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -72,7 +72,7 @@ checked program was:
 
 have_header: checking for eval_intern.h... -------------------- yes
 
-"gcc-4.2 -E -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin11.4.2 -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/kiriya/.rvm/src/ruby-1.9.3-p194 -I/Users/kiriya/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe  conftest.c -o conftest.i"
+"clang -E -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1/x86_64-darwin12.2.0 -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1/ruby/backward -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1 -I. -I/Users/kiriya/.rvm/src/ruby-1.9.3-p286 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/kiriya/.rvm/usr/include -fno-common -pipe  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -84,9 +84,14 @@ checked program was:
 
 have_type: checking for struct iseq_line_info_entry in vm_core.h,iseq.h... -------------------- no
 
-"gcc-4.2 -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin11.4.2 -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/kiriya/.rvm/src/ruby-1.9.3-p194 -I/Users/kiriya/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe   -c conftest.c"
-conftest.c:8: error: invalid application of ‘sizeof’ to incomplete type ‘conftest_type’ 
-conftest.c:8: error: size of array ‘conftestval’ is negative
+"clang -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1/x86_64-darwin12.2.0 -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1/ruby/backward -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1 -I. -I/Users/kiriya/.rvm/src/ruby-1.9.3-p286 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/kiriya/.rvm/usr/include -fno-common -pipe   -c conftest.c"
+conftest.c:8:17: error: invalid application of 'sizeof' to an incomplete type 'conftest_type' (aka 'struct iseq_line_info_entry')
+int conftestval[sizeof(conftest_type)?1:-1];
+                ^     ~~~~~~~~~~~~~~~
+conftest.c:7:16: note: forward declaration of 'struct iseq_line_info_entry'
+typedef struct iseq_line_info_entry conftest_type;
+               ^
+1 error generated.
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -103,7 +108,7 @@ checked program was:
 
 have_type: checking for struct iseq_insn_info_entry in vm_core.h,iseq.h... -------------------- yes
 
-"gcc-4.2 -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin11.4.2 -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/kiriya/.rvm/src/ruby-1.9.3-p194 -I/Users/kiriya/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe   -c conftest.c"
+"clang -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1/x86_64-darwin12.2.0 -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1/ruby/backward -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1 -I. -I/Users/kiriya/.rvm/src/ruby-1.9.3-p286 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/kiriya/.rvm/usr/include -fno-common -pipe   -c conftest.c"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -120,7 +125,7 @@ checked program was:
 
 block in <main>: checking for if rb_iseq_compile_with_option was added an argument filepath... -------------------- yes
 
-"gcc-4.2 -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin11.4.2 -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/kiriya/.rvm/src/ruby-1.9.3-p194 -I/Users/kiriya/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe   -c conftest.c"
+"clang -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1/x86_64-darwin12.2.0 -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1/ruby/backward -I/Users/kiriya/.rvm/rubies/ruby-1.9.3-p286/include/ruby-1.9.1 -I. -I/Users/kiriya/.rvm/src/ruby-1.9.3-p286 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/kiriya/.rvm/usr/include -fno-common -pipe   -c conftest.c"
 checked program was:
 /* begin */
 1: #include "ruby.h"
