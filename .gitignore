@@ -15,4 +15,4 @@
 /tmp
 
 # Ingore Installed Gems
-/vendor/bundler
+/vendor/bundler/*
